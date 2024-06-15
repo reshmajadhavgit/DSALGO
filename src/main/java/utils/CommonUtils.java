@@ -5,12 +5,15 @@ import java.util.List;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
 
 public class CommonUtils {
 
 	WebDriver driver;
+	
 
 	//***********************************Constructor*****************************************/
 	public CommonUtils(WebDriver driver) {
@@ -20,10 +23,13 @@ public class CommonUtils {
 
 	//***********************************Locators******************************************/
 
-	@FindBy(xpath = "//div[@class='nav-item dropdown']/div/a")
+	@FindBy(xpath = "//div[@class='nav-item dropdown']//a")
 	private List<WebElement> dataStructuresDropDownList;
+	
+	@FindBy (xpath = "//div[@class='nav-item dropdown']/div/a[text()='Arrays']")
+	private WebElement arraysOption;
 
-	@FindBy(xpath = "//div[@class='nav-item dropdown']")
+	@FindBy(xpath = "//a[@data-toggle='dropdown']")
 	private WebElement dataStructuresDropDown;
 
 	@FindBy(xpath = "//a[text()='NumpyNinja']")
@@ -45,19 +51,38 @@ public class CommonUtils {
 	private WebElement userName;
 
 	//**********************Page Actions ********************************************************/
+	
+	// Get the dropdown list and display it on the console
 	public List<WebElement> getdataStructuresDropDownList() {
+		dataStructuresDropDown.click();
 		int optionsCount = dataStructuresDropDownList.size();
 		System.out.println("The size of the Data Structures dropdown is: " + optionsCount);
 
-		dataStructuresDropDown.click();
-
 		for (int i = 0; i < optionsCount; i++) {
 			String value = dataStructuresDropDownList.get(i).getText();
+//			System.out.println(value);
+//			if(value.equals("Arrays"))
+//			{
+//				System.out.println(value);
+//				dataStructuresDropDownList.get(i).click();
+//			}
 			System.out.println(value);
 		}
 		return dataStructuresDropDownList;
 	}
 
+	//******************************Select the option from the dropdown list***********************
+	public void doSelectOptionFromDropDown() 
+	{
+		System.out.println("Hiiiiiiiiiiii");
+	    dataStructuresDropDown.click();
+	    Actions action = new Actions(driver); 
+	    action.moveToElement(arraysOption).click();
+	 //   action.moveToElement(arraysOption).build().perform();
+	    
+	}
+
+	
 	public int getDropdownCount() {
 		return dataStructuresDropDownList.size();
 	}
