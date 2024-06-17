@@ -17,10 +17,18 @@ public class HomePageAfterLogin {
 	@FindBy(xpath="//div[contains(text(),'You are logged in')]")
 	private WebElement successfulLoginMsg;
 	
+	@FindBy (xpath="//h5[text()='Array']/parent::div/p/following-sibling::a[text()='Get Started']")
+	private WebElement arrayGetStartedButton;
+	
 	public String getSuccessfulLoginMsg()
 	{
 		String actualText = successfulLoginMsg.getText();
 		System.out.println("Successful login message is displayed: " +actualText);
 		return actualText;
+	}
+	
+	public void doClickOnArrayGetStarted()
+	{
+		arrayGetStartedButton.click();
 	}
 }
