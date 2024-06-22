@@ -5,28 +5,25 @@ import java.util.List;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 
 public class CommonUtils {
 
 	WebDriver driver;
-	
 
-	//***********************************Constructor*****************************************/
+	// ***********************************Constructor*****************************************/
 	public CommonUtils(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
-	//***********************************Locators******************************************/
+	// ***********************************Locators******************************************/
 
-	@FindBy(xpath = "//div[@class='nav-item dropdown']//a")
+	@FindBy(xpath = "//div[@class='dropdown-menu']//a")
 	private List<WebElement> dataStructuresDropDownList;
-	
-	@FindBy (xpath = "//div[@class='nav-item dropdown']/div/a[text()='Arrays']")
+
+	@FindBy(xpath = "//div/a[text()='Arrays']")
 	private WebElement arraysOption;
 
 	@FindBy(xpath = "//a[@data-toggle='dropdown']")
@@ -50,39 +47,41 @@ public class CommonUtils {
 	@FindBy(xpath = "//a[text()=' Automationtechies ']")
 	private WebElement userName;
 
-	//**********************Page Actions ********************************************************/
-	
+	@FindBy(xpath = "//a[text()='Try here>>>']")
+	private WebElement tryHereBtn;
+
+	// **********************Page Actions
+	// ********************************************************/
+
 	// Get the dropdown list and display it on the console
-	public List<WebElement> getdataStructuresDropDownList() {
+	public String getdataStructuresDropDownList(String OptionName) {
+		String pageUrl = null;
+		System.out.println("The size of the dropdown list is: " + dataStructuresDropDownList.size());
 		dataStructuresDropDown.click();
-		int optionsCount = dataStructuresDropDownList.size();
-		System.out.println("The size of the Data Structures dropdown is: " + optionsCount);
-
-		for (int i = 0; i < optionsCount; i++) {
+		System.out.println("The size of the dropdown list is: " + dataStructuresDropDownList.size());
+		for (int i = 0; i < dataStructuresDropDownList.size(); i++) {
 			String value = dataStructuresDropDownList.get(i).getText();
-//			System.out.println(value);
-//			if(value.equals("Arrays"))
-//			{
-//				System.out.println(value);
-//				dataStructuresDropDownList.get(i).click();
-//			}
 			System.out.println(value);
+			if (value.equals(OptionName)) {
+				dataStructuresDropDownList.get(i).click();
+				pageUrl = driver.getCurrentUrl();
+				break;
+			}
 		}
-		return dataStructuresDropDownList;
+		return pageUrl;
 	}
 
-	//******************************Select the option from the dropdown list***********************
-	public void doSelectOptionFromDropDown() 
-	{
-		System.out.println("Hiiiiiiiiiiii");
-	    dataStructuresDropDown.click();
-	    Actions action = new Actions(driver); 
-	    action.moveToElement(arraysOption).click();
-	 //   action.moveToElement(arraysOption).build().perform();
-	    
+	// ******************************Select the option from the dropdown
+	// list***********************
+	public void doSelectOptionFromDropDown() {
+		dataStructuresDropDown.click();
+		arraysOption.click();
+//	    Actions action = new Actions(driver); 
+//	    action.moveToElement(arraysOption).click();
+		// action.moveToElement(arraysOption).build().perform();
+
 	}
 
-	
 	public int getDropdownCount() {
 		return dataStructuresDropDownList.size();
 	}
@@ -96,6 +95,7 @@ public class CommonUtils {
 	}
 
 	public String isTryEditorPageDisplayed() {
+		System.out.println("The current URL is: " +driver.getCurrentUrl());
 		return driver.getCurrentUrl();
 	}
 
@@ -107,9 +107,21 @@ public class CommonUtils {
 		return userName.isDisplayed();
 	}
 
-	public String verifyValidDataInTryEditor() {
-		tryEditorPane.sendKeys("print 10");
+//	public String verifyValidDataInTryEditor() {
+//		tryEditorPane.sendKeys("print 10");
+//		runButton.click();
+//		return tryEditorOutput.getText();
+//	}
+
+	public void doSendData(String testData) {
+		tryEditorPane.sendKeys(testData);
+	}
+
+	public void doClickOnRunBtn() {
 		runButton.click();
+	}
+
+	public String doCheckTryEditorOutput() {
 		return tryEditorOutput.getText();
 	}
 
@@ -134,4 +146,7 @@ public class CommonUtils {
 		return driver.getCurrentUrl();
 	}
 
+	public void doClickOnTryHereBtn() {
+		tryHereBtn.click();
+	}
 }
