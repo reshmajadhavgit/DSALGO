@@ -9,81 +9,43 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">12</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">117,042</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">142</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">runner.TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="3">1718732755079</td><td rowspan="3">6690</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m2">runScenario</a></td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="12">runner.TestRunner</td><td><a href="#m3">runScenario</a></td><td rowspan="12">1718732658579</td><td rowspan="12">7166</td></tr><tr class="passedeven"><td><a href="#m4">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m5">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m6">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m7">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m8">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m9">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m10">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m11">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m12">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m13">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m14">runScenario</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">runner.TestRunner</td><td><a href="#m0">setUpClass</a></td><td rowspan="1">1719125419970</td><td rowspan="1">104</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify Links  on Stack page&quot;</td><td>&quot;Stack functionality&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=125.0.6422.176)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.4.1&apos;, java.version: &apos;22&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fcbcb40e9087bbaf4e5b1c7ca027d030, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.176, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: /var/folders/cx/gt2v1fdj52z...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57766}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57766/devtoo..., se:cdpVersion: 125.0.6422.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fcbcb40e9087bbaf4e5b1c7ca027d030
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1039)
-	at hooks.ApplicationHooks.setup(ApplicationHooks.java:25)
+<h2>Default test</h2><h3 id="m0">runner.TestRunner#setUpClass</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@3f6f6701</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: path must exist: C:\Users\sagar\DSALGO_Latest\DSALGO\.src\test\resources\features\Tree.feature
+	at io.cucumber.core.resource.PathScanner.findResourcesForPath(PathScanner.java:49)
+	at io.cucumber.core.resource.PathScanner.findResourcesForUri(PathScanner.java:31)
+	at io.cucumber.core.resource.ResourceScanner.findResourcesForUri(ResourceScanner.java:61)
+	at io.cucumber.core.resource.ResourceScanner.scanForResourcesUri(ResourceScanner.java:134)
+	at io.cucumber.core.runtime.FeaturePathFeatureSupplier.loadFeatures(FeaturePathFeatureSupplier.java:62)
+	at io.cucumber.core.runtime.FeaturePathFeatureSupplier.get(FeaturePathFeatureSupplier.java:45)
+	at io.cucumber.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:122)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User creates an account with blank values&quot;</td><td>&quot;Registration functionality&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=125.0.6422.176)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.4.1&apos;, java.version: &apos;22&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1d06f498ea4100e92b227c782e8d46ff, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.176, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: /var/folders/cx/gt2v1fdj52z...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57654}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57654/devtoo..., se:cdpVersion: 125.0.6422.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1d06f498ea4100e92b227c782e8d46ff
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1039)
-	at hooks.ApplicationHooks.setup(ApplicationHooks.java:25)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User creates an account&quot;</td><td>&quot;Registration functionality&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //div[contains(text(),&apos;New Account Created&apos;)]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.4.1&apos;, java.version: &apos;22&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at stepdefinitions.RegisterStepDefinition.user_account_should_be_created(RegisterStepDefinition.java:43)
-	at ✽.User account should be created(file:///Users/parikshit/workspace/DSALGO/src/test/resources/features/Register.feature:10)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify operationinStackPage Content&quot;</td><td>&quot;Operation in Stack functionality&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify SubHeader of Stack page&quot;</td><td>&quot;Stack functionality&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify Logo on Stack page&quot;</td><td>&quot;Stack functionality&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;&quot;</td><td>&quot;Arrays functionality&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify Username on Operation in Stack page&quot;</td><td>&quot;Operation in Stack functionality&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User creates a duplicate account&quot;</td><td>&quot;Registration functionality&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify Operations in Stack Link Navigate to that  page&quot;</td><td>&quot;Operation in Stack functionality&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify Header of Stack page&quot;</td><td>&quot;Stack functionality&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify TryEditor btn is  Clickable&quot;</td><td>&quot;Operation in Stack functionality&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m12">runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify StackPage Content&quot;</td><td>&quot;Stack functionality&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m13">runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify  Header of Operations in stack page&quot;</td><td>&quot;Operation in Stack functionality&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m14">runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Login with valid credentials&quot;</td><td>&quot;Login functionality&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
