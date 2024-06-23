@@ -144,7 +144,13 @@ public class CommonUtils {
 	public String verifyBackFromTryEditorPage() {
 		driver.navigate().back();
 		return driver.getCurrentUrl();
+		
 	}
+	public boolean isRunBtnDisplayed() {
+		return runButton.isDisplayed();
+	}
+	
+	
 
 	public void doClickOnTryHereBtn() {
 		tryHereBtn.click();

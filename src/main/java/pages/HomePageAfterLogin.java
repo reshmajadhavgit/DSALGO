@@ -23,10 +23,13 @@ public class HomePageAfterLogin {
 	@FindBy (xpath="//h5[text()='Stack']/parent::div/p/following-sibling::a[text()='Get Started']")
 	private WebElement stackGetStartedButton;
 	
-	public void doClickOnStackGetStarted()
-	{
-		stackGetStartedButton.click();
-	}
+	@FindBy(xpath="//h5[text()='Queue']/parent::div/p/following-sibling::a[text()='Get Started']")
+		private WebElement queueGetStartedButton;
+	
+	@FindBy(xpath="//h5[text()='Graph']/parent::div/p/following-sibling::a[text()='Get Started']")
+	private WebElement graphGetStartedButton;
+	
+
 	public String getSuccessfulLoginMsg()
 	{
 		String actualText = successfulLoginMsg.getText();
@@ -37,5 +40,15 @@ public class HomePageAfterLogin {
 	public void doClickOnArrayGetStarted()
 	{
 		arrayGetStartedButton.click();
+	}
+	public void doClickOnStackGetStarted()
+	{
+		stackGetStartedButton.click();
+	}
+	public void doClickOnQueueGetStarted() {
+	queueGetStartedButton.click();
+}
+	public void doClickOnGraphGetStarted() {
+		graphGetStartedButton.click();
 	}
 }
