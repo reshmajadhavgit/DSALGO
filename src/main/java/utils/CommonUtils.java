@@ -23,7 +23,7 @@ public class CommonUtils {
 
 	//***********************************Locators******************************************/
 
-	@FindBy(xpath = "//div[@class='nav-item dropdown']//a")
+	@FindBy(xpath = "//div[@class='dropdown-menu']//a")
 	private List<WebElement> dataStructuresDropDownList;
 	
 	@FindBy (xpath = "//div[@class='nav-item dropdown']/div/a[text()='Arrays']")
@@ -132,6 +132,12 @@ public class CommonUtils {
 	public String verifyBackFromTryEditorPage() {
 		driver.navigate().back();
 		return driver.getCurrentUrl();
+		
 	}
+	public boolean isRunBtnDisplayed() {
+		return runButton.isDisplayed();
+	}
+	
+	
 
 }
