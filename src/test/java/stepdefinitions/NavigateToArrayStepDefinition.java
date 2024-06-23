@@ -14,7 +14,7 @@ import pages.LoginPage;
 import pages.MainPage;
 import utils.CommonUtils;
 
-public class ArraysStepDefinition {
+public class NavigateToArrayStepDefinition {
 	WebDriver driver;
 	HomePageAfterLogin homePageAfterLogin;
 	HomePageBeforeLogin homePageBeforeLogin;
@@ -42,9 +42,17 @@ public class ArraysStepDefinition {
 	public void user_clicks_the_get_started_button_from_array_section() {
 		homePageAfterLogin.doClickOnArrayGetStarted();
 	}
+	
+	@When("User clicks the Arrays option from Data Structures dropdown")
+	public void user_clicks_the_arrays_option_from_data_structures_dropdown() {
+		driver = DriverFactory.getDriver();
+		commonUtils = new CommonUtils(driver);
+		commonUtils.doSelectOptionFromDropDown();
+	}
 
-	@Then("Arrays page opens up successfully")
-	public void arrays_page_opens_up_successfully() {
+
+	@Then("Array page opens up successfully")
+	public void array_page_opens_up_successfully() {
 		arraysPage = new ArraysPage(driver);
 	   Assert.assertTrue(driver.getCurrentUrl().contains("com/array/"));
 	}
