@@ -1,12 +1,18 @@
 package utils;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CommonUtils {
 
@@ -114,7 +120,17 @@ public class CommonUtils {
 //	}
 
 	public void doSendData(String testData) {
-		tryEditorPane.sendKeys(testData);
+		//tryEditorPane.sendKeys(testData);
+		Actions act = new Actions(driver);
+		act.click(tryEditorPane)
+		.keyDown(Keys.CONTROL)
+		.sendKeys("a")
+		.keyUp(Keys.CONTROL)
+		.sendKeys(Keys.BACK_SPACE)
+		.build()
+		.perform();
+     	//act.sendKeys(defaultTextinEditorPane, "print(\"Testing Automation\")").build().perform();
+		act.sendKeys(tryEditorPane, testData).build().perform();
 	}
 
 	public void doClickOnRunBtn() {
@@ -126,13 +142,11 @@ public class CommonUtils {
 	}
 
 	public void verifyAlertMessageInTryEditor() {
-		tryEditorPane.clear();
-		tryEditorPane.sendKeys("Test Message");
-		runButton.click();
-		Alert alert = driver.switchTo().alert();
-		String alertMessage = driver.switchTo().alert().getText();
-		System.out.println(alertMessage);
+		Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		Alert alert = wait.until(ExpectedConditions.alertIsPresent());
+		String alertMsg = alert.getText();
 		alert.accept();
+		System.out.println(alertMsg);
 	}
 
 	public String verifyBlankDataInTryEditor() {
@@ -150,8 +164,6 @@ public class CommonUtils {
 		return runButton.isDisplayed();
 	}
 	
-	
-
 	public void doClickOnTryHereBtn() {
 		tryHereBtn.click();
 	}
