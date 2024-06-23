@@ -29,6 +29,7 @@ public class HomePageAfterLogin {
 	@FindBy(xpath="//h5[text()='Graph']/parent::div/p/following-sibling::a[text()='Get Started']")
 	private WebElement graphGetStartedButton;
 	
+
 	public String getSuccessfulLoginMsg()
 	{
 		String actualText = successfulLoginMsg.getText();
