@@ -87,8 +87,8 @@ public class ArraysInPythonStepDefinition {
 		Assert.assertTrue(arraysInPythonPage.doClickOnLink(pageLinkName).contains(pageLinkName));
 	}
 	
-	@When("User clicks on Try here button")
-	public void user_clicks_on_try_here_button() {
+	@When("User clicks on Try here button on Arrays in Python page")
+	public void user_clicks_on_try_here_button_on_arrays_in_python_page() {
 		driver = DriverFactory.getDriver();
 		commonUtils = new CommonUtils(driver);
 		commonUtils.doClickOnTryHereBtn();
