@@ -43,5 +43,5 @@ Scenario: Verify "Practice Questions" link is clickable
 Then  "Practice Questions" page opens up on Arrays in Python page
 
 Scenario: Verify "Try here" button
-When User clicks on Try here button
+When User clicks on Try here button on Arrays in Python page
 Then  Try Editor page opens up on Arrays in Python page

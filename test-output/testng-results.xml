@@ -1,368 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="15" passed="12" failed="3" skipped="0">
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-18T13:44:04 EDT" name="Default suite" finished-at="2024-06-18T13:46:01 EDT" duration-ms="117042">
+  <suite started-at="2024-06-23T01:50:19 CDT" name="Default suite" finished-at="2024-06-23T01:50:20 CDT" duration-ms="142">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@5ffead27]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@6771beb3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-06-18T13:44:04 EDT" name="Default test" finished-at="2024-06-18T13:46:01 EDT" duration-ms="117042">
+    <test started-at="2024-06-23T01:50:19 CDT" name="Default test" finished-at="2024-06-23T01:50:20 CDT" duration-ms="142">
       <class name="runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@5ffead27]" started-at="2024-06-18T13:44:04 EDT" name="setUpClass" finished-at="2024-06-18T13:44:05 EDT" duration-ms="250" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@6771beb3]" started-at="2024-06-23T01:50:19 CDT" name="setUpClass" finished-at="2024-06-23T01:50:20 CDT" duration-ms="104" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@61da0413]]>
+                <![CDATA[org.testng.TestRunner@3f6f6701]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[path must exist: C:\Users\sagar\DSALGO_Latest\DSALGO\.src\test\resources\features\Tree.feature]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: path must exist: C:\Users\sagar\DSALGO_Latest\DSALGO\.src\test\resources\features\Tree.feature
+at io.cucumber.core.resource.PathScanner.findResourcesForPath(PathScanner.java:49)
+at io.cucumber.core.resource.PathScanner.findResourcesForUri(PathScanner.java:31)
+at io.cucumber.core.resource.ResourceScanner.findResourcesForUri(ResourceScanner.java:61)
+at io.cucumber.core.resource.ResourceScanner.scanForResourcesUri(ResourceScanner.java:134)
+at io.cucumber.core.runtime.FeaturePathFeatureSupplier.loadFeatures(FeaturePathFeatureSupplier.java:62)
+at io.cucumber.core.runtime.FeaturePathFeatureSupplier.get(FeaturePathFeatureSupplier.java:45)
+at io.cucumber.testng.TestNGCucumberRunner.<init>(TestNGCucumberRunner.java:122)
+at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:27)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@5ffead27]" started-at="2024-06-18T13:44:05 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-18T13:44:09 EDT" duration-ms="4164" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[""]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Arrays functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@5ffead27]" started-at="2024-06-18T13:44:09 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-18T13:44:12 EDT" duration-ms="3522" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Login with valid credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@5ffead27]" started-at="2024-06-18T13:44:12 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-18T13:44:18 EDT" duration-ms="5840" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify  Header of Operations in stack page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Operation in Stack functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@5ffead27]" started-at="2024-06-18T13:44:18 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-18T13:44:25 EDT" duration-ms="7166" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify operationinStackPage Content"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Operation in Stack functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@5ffead27]" started-at="2024-06-18T13:44:25 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-18T13:44:33 EDT" duration-ms="7796" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify Username on Operation in Stack page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Operation in Stack functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@5ffead27]" started-at="2024-06-18T13:44:33 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-18T13:44:42 EDT" duration-ms="8922" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify TryEditor btn is  Clickable"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Operation in Stack functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@5ffead27]" started-at="2024-06-18T13:44:42 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-18T13:44:52 EDT" duration-ms="9743" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify Operations in Stack Link Navigate to that  page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Operation in Stack functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@5ffead27]" started-at="2024-06-18T13:44:52 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-18T13:45:06 EDT" duration-ms="14126" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User creates an account"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Registration functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to find element with locator By.xpath: //div[contains(text(),'New Account Created')]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.4.1', java.version: '22'
-Driver info: driver.version: RemoteWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //div[contains(text(),'New Account Created')]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.4.1', java.version: '22'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-at stepdefinitions.RegisterStepDefinition.user_account_should_be_created(RegisterStepDefinition.java:43)
-at ✽.User account should be created(file:///Users/parikshit/workspace/DSALGO/src/test/resources/features/Register.feature:10)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@5ffead27]" started-at="2024-06-18T13:45:06 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-18T13:45:15 EDT" duration-ms="9184" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User creates a duplicate account"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Registration functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@5ffead27]" started-at="2024-06-18T13:45:15 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-18T13:45:21 EDT" duration-ms="6396" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User creates an account with blank values"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Registration functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=125.0.6422.176)
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.4.1', java.version: '22'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1d06f498ea4100e92b227c782e8d46ff, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.176, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: /var/folders/cx/gt2v1fdj52z...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57654}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57654/devtoo..., se:cdpVersion: 125.0.6422.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1d06f498ea4100e92b227c782e8d46ff]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=125.0.6422.176)
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.4.1', java.version: '22'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1d06f498ea4100e92b227c782e8d46ff, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.176, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: /var/folders/cx/gt2v1fdj52z...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57654}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57654/devtoo..., se:cdpVersion: 125.0.6422.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1d06f498ea4100e92b227c782e8d46ff
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1039)
-at hooks.ApplicationHooks.setup(ApplicationHooks.java:25)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@5ffead27]" started-at="2024-06-18T13:45:21 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-18T13:45:31 EDT" duration-ms="9345" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify Header of Stack page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Stack functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@5ffead27]" started-at="2024-06-18T13:45:31 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-18T13:45:39 EDT" duration-ms="7985" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify SubHeader of Stack page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Stack functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@5ffead27]" started-at="2024-06-18T13:45:39 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-18T13:45:45 EDT" duration-ms="6715" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify StackPage Content"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Stack functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@5ffead27]" started-at="2024-06-18T13:45:45 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-18T13:45:55 EDT" duration-ms="9084" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify Logo on Stack page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Stack functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@5ffead27]" started-at="2024-06-18T13:45:55 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-18T13:46:01 EDT" duration-ms="6690" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify Links  on Stack page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Stack functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=125.0.6422.176)
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.4.1', java.version: '22'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fcbcb40e9087bbaf4e5b1c7ca027d030, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.176, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: /var/folders/cx/gt2v1fdj52z...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57766}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57766/devtoo..., se:cdpVersion: 125.0.6422.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fcbcb40e9087bbaf4e5b1c7ca027d030]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=125.0.6422.176)
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.4.1', java.version: '22'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fcbcb40e9087bbaf4e5b1c7ca027d030, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.176, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: /var/folders/cx/gt2v1fdj52z...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57766}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57766/devtoo..., se:cdpVersion: 125.0.6422.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fcbcb40e9087bbaf4e5b1c7ca027d030
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1039)
-at hooks.ApplicationHooks.setup(ApplicationHooks.java:25)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@5ffead27]" started-at="2024-06-18T13:46:01 EDT" name="tearDownClass" finished-at="2024-06-18T13:46:01 EDT" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@6771beb3]" started-at="2024-06-23T01:50:20 CDT" name="tearDownClass" finished-at="2024-06-23T01:50:20 CDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
