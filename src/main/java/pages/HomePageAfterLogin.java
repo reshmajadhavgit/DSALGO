@@ -20,6 +20,12 @@ public class HomePageAfterLogin {
 	@FindBy (xpath="//h5[text()='Array']/parent::div/p/following-sibling::a[text()='Get Started']")
 	private WebElement arrayGetStartedButton;
 	
+	@FindBy (xpath="//h5[text()='Tree']/parent::div/p/following-sibling::a[text()='Get Started']")
+	private WebElement treeGetStartedButton;
+	
+	@FindBy (xpath="//h5[text()='Graph']/parent::div/p/following-sibling::a[text()='Get Started']")
+	private WebElement graphGetStartedButton;
+	
 	public String getSuccessfulLoginMsg()
 	{
 		String actualText = successfulLoginMsg.getText();
@@ -30,5 +36,15 @@ public class HomePageAfterLogin {
 	public void doClickOnArrayGetStarted()
 	{
 		arrayGetStartedButton.click();
+	}
+	
+	public void doClickOnTreeGetStarted()
+	{
+		treeGetStartedButton.click();
+	}
+	
+	public void doClickOnGraphGetStarted()
+	{
+		graphGetStartedButton.click();
 	}
 }
