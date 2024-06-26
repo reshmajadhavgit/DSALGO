@@ -43,6 +43,6 @@ public class ApplicationHooks {
 		}
 
 		
-		//driver.close();
+	driver.quit();
 	}
 }
