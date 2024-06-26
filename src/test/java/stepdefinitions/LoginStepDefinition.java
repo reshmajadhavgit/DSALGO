@@ -53,7 +53,7 @@ public class LoginStepDefinition {
 	@When("User enters username {string} and enters password {string}")
 	public void user_enters_username_and_enters_password(String username, String password) {
 		loginPage = new LoginPage(driver);
-		Log.info("Entering username and passwrod");
+		Log.info("Entering username and password");
 		loginPage.enterLoginCredentials(username, password);
 
 	}
