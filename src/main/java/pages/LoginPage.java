@@ -23,6 +23,9 @@ public class LoginPage {
 
 	@FindBy(xpath = "//input[@type='submit']")
 	private WebElement loginBtn;
+	
+	@FindBy(xpath = "//div[@class='alert alert-primary']")
+	private WebElement errorMsg;
 
 	// MainPage actions
 	public void enterLoginCredentials(String userID, String passWordID) {
@@ -32,5 +35,9 @@ public class LoginPage {
 
 	public void doClickLoginBtn() {
 		loginBtn.click();
+	}
+	
+	public String verifyErrorMsg() {
+		return errorMsg.getText();
 	}
 }
