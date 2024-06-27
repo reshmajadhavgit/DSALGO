@@ -6,10 +6,14 @@ import factory.DriverFactory;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import pages.ApplicationsOfBinarytreesPage;
+import pages.BinarySearchTreesPage;
 import pages.BinaryTreeTraversalsPage;
 import pages.BinaryTreesPage;
 import pages.HomePageAfterLogin;
 import pages.ImplementationInPythonPage;
+import pages.ImplementationOfBST;
+import pages.ImplementationOfBinaryTreesPage;
 import pages.OverviewOfTreesPage;
 import pages.Terminologies;
 import pages.Traversals_IllustrationPage;
@@ -34,7 +38,11 @@ public class TreeStepDefinition {
 	TypesOfBinaryTreesPage typesOfBinaryTreesPage;
 	ImplementationInPythonPage implementationInPythonPage;
 	BinaryTreeTraversalsPage binaryTreeTraversalsPage;
-
+	ImplementationOfBinaryTreesPage implementationOfBinaryTreesPage;
+	ApplicationsOfBinarytreesPage applicationsOfBinarytreesPage;
+	BinarySearchTreesPage binarySearchTreesPage;
+	ImplementationOfBST implementationOfBST;
+	
 	//*****************Background Steps***********************
 	@When("User clicks the Get Started button from Tree section")
 	public void user_clicks_the_get_started_button_from_tree_section() {
@@ -106,6 +114,7 @@ public class TreeStepDefinition {
 		System.out.println("Scenario 2 Executed");
 	}
 	//****************************Scenario 3 steps*************************
+	
 	@When("User clicks on Try here button")
 	public void user_clicks_on_try_here_button() {
 
@@ -130,6 +139,7 @@ public class TreeStepDefinition {
 
 	//************************ Terminologies Page ****************************
 	//*************************Scenario 1**********************************
+	
 	@When("User clicks Terminologies link")
 	public void user_clicks_terminologies_link() {
 		treePage = new TreePage(driver);
@@ -441,7 +451,7 @@ public class TreeStepDefinition {
 	@Then("User is entered into Implementation in Python page")
 	public void user_is_entered_into_implementation_in_python_page() {
 		implementationInPythonPage = new ImplementationInPythonPage(driver);
-		Assert.assertTrue(driver.getCurrentUrl().contains("com/tree/implementation-of-binary-trees/"));
+		Assert.assertTrue(driver.getCurrentUrl().contains("com/tree/implementation-in-python/"));
 		commonUtils = new CommonUtils(driver);
 		commonUtils.isDropdownDisplayed();
 		commonUtils.isUserNameDisplayed();
@@ -491,6 +501,12 @@ public class TreeStepDefinition {
 	@Then("User is entered into Binary Tree Traversals page")
 	public void user_is_entered_into_binary_tree_traversals_page() {
 		binaryTreeTraversalsPage = new BinaryTreeTraversalsPage(driver);
+		Assert.assertTrue(driver.getCurrentUrl().contains("com/tree/binary-tree-traversals/"));
+		commonUtils = new CommonUtils(driver);
+		commonUtils.isDropdownDisplayed();
+		commonUtils.isUserNameDisplayed();
+		System.out.println("Page title is : " + driver.getTitle());
+		System.out.println("Scenario 1 Executed");
 
 	}
 	//**************************Scenario 2********************************
@@ -503,17 +519,24 @@ public class TreeStepDefinition {
 
 	@When("Validate user is in the Binary Tree Traversals page")
 	public void validate_user_is_in_the_binary_tree_traversals_page() {
-
+		binaryTreeTraversalsPage = new BinaryTreeTraversalsPage(driver);
+		binaryTreeTraversalsPage.getCountOfLinks();
 	}
 
 	@Then("User is able to see Binary Tree Traversals Text in the page")
 	public void user_is_able_to_see_binary_tree_traversals_text_in_the_page() {
-
+		binaryTreeTraversalsPage.binaryTreeTraversalsHeadingIsDisplayed();
+		commonUtils = new CommonUtils(driver);
+		commonUtils.isLogoPresent();
+		commonUtils.isSignOutLinkDisplayed();
+		System.out.println("Scenario 2 ");
 	}
 	//****************************Scenario 3 steps*************************
 	@When("User clicks on Try here button under Binary Tree Traversals")
 	public void user_clicks_on_try_here_button_under_binary_tree_traversals() {
-
+		binaryTreeTraversalsPage = new BinaryTreeTraversalsPage(driver);
+		binaryTreeTraversalsPage.clickOnTryHereButton();
+		System.out.println("Scenario 3 Executed");
 	}
 
 	//*********************Implementation of Binary Trees*********************************
@@ -522,32 +545,49 @@ public class TreeStepDefinition {
 
 	@When("User clicks Implementation of Binary Trees link")
 	public void user_clicks_implementation_of_binary_trees_link() {
-
+		treePage = new TreePage(driver);
+		treePage.clickOnImplementationOfBinaryTreesLink();
 	}
 
 	@Then("User is entered into Implementation of Binary Trees page")
 	public void user_is_entered_into_implementation_of_binary_trees_page() {
+		implementationOfBinaryTreesPage = new ImplementationOfBinaryTreesPage(driver);
+		Assert.assertTrue(driver.getCurrentUrl().contains("com/tree/implementation-of-binary-trees/"));
+		commonUtils = new CommonUtils(driver);
+		commonUtils.isDropdownDisplayed();
+		commonUtils.isUserNameDisplayed();
+		System.out.println("Page title is : " + driver.getTitle());
+		System.out.println("Scenario 1 Executed");
 
 	}
 	//**************************Scenario 2********************************
 	@Given("User is entered into Implementation of Binary Trees Page successfully")
 	public void user_is_entered_into_implementation_of_binary_trees_page_successfully() {
-
+		treePage = new TreePage(driver);
+		treePage.clickOnImplementationOfBinaryTreesLink();
 	}
 
 	@When("Validate user is in the Implementation of Binary Trees page")
 	public void validate_user_is_in_the_implementation_of_binary_trees_page() {
-
+		implementationOfBinaryTreesPage = new ImplementationOfBinaryTreesPage(driver);
+		implementationOfBinaryTreesPage.getCountOfLinks();
 	}
 
 	@Then("User is able to see Implementation of Binary Trees Text in the page")
 	public void user_is_able_to_see_implementation_of_binary_trees_text_in_the_page() {
+		implementationOfBinaryTreesPage.implementationOfBinaryTreesHeadingIsDisplayed();
+		commonUtils = new CommonUtils(driver);
+		commonUtils.isLogoPresent();
+		commonUtils.isSignOutLinkDisplayed();
+		System.out.println("Scenario 2 ");
 
 	}
 	//****************************Scenario 3 steps*************************
 	@When("User clicks on Try here button under Implementation of Binary Trees")
 	public void user_clicks_on_try_here_button_under_implementation_of_binary_trees() {
-
+		implementationOfBinaryTreesPage = new ImplementationOfBinaryTreesPage(driver);
+		implementationOfBinaryTreesPage.clickOnTryHereButton();
+		System.out.println("Scenario 3 Executed");
 	}
 
 	//************************Applications of Binary Trees******************************
@@ -555,33 +595,50 @@ public class TreeStepDefinition {
 
 	@When("User clicks Applications of Binary Trees link")
 	public void user_clicks_applications_of_binary_trees_link() {
-
+		treePage = new TreePage(driver);
+		treePage.clickOnApplicationsOfBinaryTreesLink();
 	}
 
 	@Then("User is entered into Applications of Binary Trees page")
 	public void user_is_entered_into_applications_of_binary_trees_page() {
+		applicationsOfBinarytreesPage = new ApplicationsOfBinarytreesPage(driver);
+		Assert.assertTrue(driver.getCurrentUrl().contains("com/tree/applications-of-binary-trees/"));
+		commonUtils = new CommonUtils(driver);
+		commonUtils.isDropdownDisplayed();
+		commonUtils.isUserNameDisplayed();
+		System.out.println("Page title is : " + driver.getTitle());
+		System.out.println("Scenario 1 Executed");
 
 	}
 	//**************************Scenario 2********************************
 
 	@Given("User is entered into Applications of Binary Trees Page successfully")
 	public void user_is_entered_into_applications_of_binary_trees_page_successfully() {
-
+		treePage = new TreePage(driver);
+		treePage.clickOnApplicationsOfBinaryTreesLink();
 	}
 
 	@When("Validate user is in the Applications of Binary Trees page")
 	public void validate_user_is_in_the_applications_of_binary_trees_page() {
-
+		applicationsOfBinarytreesPage = new ApplicationsOfBinarytreesPage(driver);
+		applicationsOfBinarytreesPage.getCountOfLinks();
 	}
 
 	@Then("User is able to see Applications of Binary Trees Text in the page")
 	public void user_is_able_to_see_applications_of_binary_trees_text_in_the_page() {
-
+		applicationsOfBinarytreesPage.applicationsOfBinaryTreesHeadingIsDisplayed();
+		commonUtils = new CommonUtils(driver);
+		commonUtils.isLogoPresent();
+		commonUtils.isSignOutLinkDisplayed();
+		System.out.println("Scenario 2 ");
+		
 	}
 	//****************************Scenario 3 steps*************************
 	@When("User clicks on Try here button under Applications of Binary Trees")
 	public void user_clicks_on_try_here_button_under_applications_of_binary_trees() {
-
+		applicationsOfBinarytreesPage = new ApplicationsOfBinarytreesPage(driver);
+		applicationsOfBinarytreesPage.clickOnTryHereButton();
+		System.out.println("Scenario 3 Executed");
 	}
 
 	//*************************Binary Search Trees**********************************************
@@ -589,33 +646,49 @@ public class TreeStepDefinition {
 
 	@When("User clicks Binary Search Trees link")
 	public void user_clicks_binary_search_trees_link() {
-
+		treePage = new TreePage(driver);
+		treePage.clickOnBinarySearchTreesLink();
 	}
 
 	@Then("User is entered into Binary Search Trees page")
 	public void user_is_entered_into_binary_search_trees_page() {
+		binarySearchTreesPage = new BinarySearchTreesPage(driver);
+		Assert.assertTrue(driver.getCurrentUrl().contains("com/tree/binary-search-trees/"));
+		commonUtils = new CommonUtils(driver);
+		commonUtils.isDropdownDisplayed();
+		commonUtils.isUserNameDisplayed();
+		System.out.println("Page title is : " + driver.getTitle());
+		System.out.println("Scenario 1 Executed");
 
 	}
 	//**************************Scenario 2********************************
 
 	@Given("User is entered into Binary Search Trees Page successfully")
 	public void user_is_entered_into_binary_search_trees_page_successfully() {
-
+		treePage = new TreePage(driver);
+		treePage.clickOnBinarySearchTreesLink();
 	}
 
 	@When("Validate user is in the Binary Search Trees page")
 	public void validate_user_is_in_the_binary_search_trees_page() {
-
+		binarySearchTreesPage = new BinarySearchTreesPage(driver);
+		binarySearchTreesPage.getCountOfLinks();
 	}
 
 	@Then("User is able to see Binary Search Trees Text in the page")
 	public void user_is_able_to_see_binary_search_trees_text_in_the_page() {
-
+		binarySearchTreesPage.binarySearchTreesHeadingIsDisplayed();
+		commonUtils = new CommonUtils(driver);
+		commonUtils.isLogoPresent();
+		commonUtils.isSignOutLinkDisplayed();
+		System.out.println("Scenario 2 ");
 	}
 	//****************************Scenario 3 steps*************************
 	@When("User clicks on Try here button under Binary Search Trees")
 	public void user_clicks_on_try_here_button_under_binary_search_trees() {
-
+		binarySearchTreesPage = new BinarySearchTreesPage(driver);
+		binarySearchTreesPage.clickOnTryHereButton();
+		System.out.println("Scenario 3 Executed");
 	}
 
 	//************************Implementation Of BST********************************************
@@ -623,35 +696,67 @@ public class TreeStepDefinition {
 
 	@When("User clicks Implementation Of BST link")
 	public void user_clicks_implementation_of_bst_link() {
-
+		treePage = new TreePage(driver);
+		treePage.clickOnImplementationOfBST();
 	}
 
 	@Then("User is entered into Implementation Of BST page")
 	public void user_is_entered_into_implementation_of_bst_page() {
+		implementationOfBST = new ImplementationOfBST(driver);
+		Assert.assertTrue(driver.getCurrentUrl().contains("com/tree/implementation-of-bst/"));
+		commonUtils = new CommonUtils(driver);
+		commonUtils.isDropdownDisplayed();
+		commonUtils.isUserNameDisplayed();
+		System.out.println("Page title is : " + driver.getTitle());
+		System.out.println("Scenario 1 Executed");
 
 	}
 	//**************************Scenario 2********************************
 
 	@Given("User is entered into Implementation Of BST Page successfully")
 	public void user_is_entered_into_implementation_of_bst_page_successfully() {
-
+		treePage = new TreePage(driver);
+		treePage.clickOnImplementationOfBST();
 	}
 
 	@When("Validate user is in the Implementation Of BST page")
 	public void validate_user_is_in_the_implementation_of_bst_page() {
-
+		implementationOfBST = new ImplementationOfBST(driver);
+		implementationOfBST.getCountOfLinks();
 	}
 
 	@Then("User is able to see Implementation Of BST Text in the page")
 	public void user_is_able_to_see_implementation_of_bst_text_in_the_page() {
-
+		implementationOfBST.implementationOfBSTHeadingIsDisplayed();
+		commonUtils = new CommonUtils(driver);
+		commonUtils.isLogoPresent();
+		commonUtils.isSignOutLinkDisplayed();
+		System.out.println("Scenario 2 ");
 	}
 	//****************************Scenario 3 steps*************************
 
 	@When("User clicks on Try here button under Implementation Of BST")
 	public void user_clicks_on_try_here_button_under_implementation_of_bst() {
+		implementationOfBST = new ImplementationOfBST(driver);
+		implementationOfBST.clickOnTryHereButton();
+		System.out.println("Scenario 3 Executed");
+	}
+	
+//*****************************Scenario 4 *********************************
 
+	@When("User clicks on practice questions link")
+	public void user_clicks_on_practice_questions_link() {
+		implementationOfBST = new ImplementationOfBST(driver);
+		implementationOfBST.clickOnTreePracticeQue();
 	}
 
+	@Then("user enters into the Practice questions page under tree")
+	public void user_enters_into_the_practice_questions_page_under_tree() {
+		Assert.assertTrue(driver.getCurrentUrl().contains("com/tree/practice"));
+		commonUtils = new CommonUtils(driver);
+		commonUtils.isLogoPresent();
+		commonUtils.isSignOutLinkDisplayed();
+		System.out.println("Scenario 4 Executed");
+	}
 
 }

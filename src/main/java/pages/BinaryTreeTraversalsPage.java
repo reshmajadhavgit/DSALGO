@@ -15,7 +15,7 @@ WebDriver driver;
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//p[text()='//p[text()='Binary Tree Traversals']']")
+	@FindBy(xpath="//p[text()='Binary Tree Traversals']")
 	private WebElement binaryTreeTraversalsHeading;
 	
 	@FindBy(xpath="//div[@id='content']/li")

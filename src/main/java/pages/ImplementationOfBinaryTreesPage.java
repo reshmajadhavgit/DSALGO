@@ -15,7 +15,7 @@ WebDriver driver;
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//p[text()='//p[text()='Implementation of Binary Trees']']")
+	@FindBy(xpath="//p[text()='Implementation of Binary Trees']")
 	private WebElement implementationOfBinaryTreesHeading;
 	
 	@FindBy(xpath="//div[@id='content']/li")
