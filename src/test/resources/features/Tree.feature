@@ -100,7 +100,7 @@ Then User is entered into a page having tryEditor with Run button
 
 
 #-----------------------------------------------------------------------------------
- Land on Binary Trees
+# Land on Binary Trees
 
 
 Scenario: Verify user is able to land on the Binary Trees Page
@@ -113,7 +113,7 @@ Given User is entered into Binary Trees Page successfully
 When Validate user is in the Binary Trees page
 Then User is able to see Binary Trees Text in the page
 
- Verification of tryEditor through Binary Trees
+ #Verification of tryEditor through Binary Trees
 Scenario: Verify user is able to use the tryEditor under Binary Trees
 Given User is entered into Binary Trees Page successfully
 When User clicks on Try here button under Binary Trees
