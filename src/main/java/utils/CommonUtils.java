@@ -88,12 +88,15 @@ public class CommonUtils {
 	}
 	
 	public void doSelectOptionFromDropDown() {
-		dataStructuresDropDown.click();
+		Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(dataStructuresDropDown)).click();
 		arraysOption.click();
 	}
 	
+	
 	public void doSelectLinkedListOptionFromDropDown() {
-		dataStructuresDropDown.click();
+		Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(dataStructuresDropDown)).click();
 		linkedListOption.click();
 	}
 	
@@ -102,11 +105,14 @@ public class CommonUtils {
 	}
 
 	public boolean isLogoPresent() {
-		return numpyLogo.isDisplayed();
+		Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		return wait.until(ExpectedConditions.visibilityOf(numpyLogo)).isDisplayed();
 	}
 
 	public boolean isDropdownDisplayed() {
-		return dataStructuresDropDown.isDisplayed();
+		Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		return wait.until(ExpectedConditions.visibilityOf(dataStructuresDropDown)).isDisplayed();
+
 	}
 
 	public String isTryEditorPageDisplayed() {
