@@ -7,16 +7,17 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class BinaryTreeTraversalsPage {
-WebDriver driver;
+public class ApplicationsOfBinarytreesPage {
+
+	WebDriver driver;
 	
-	public BinaryTreeTraversalsPage(WebDriver driver) {
-		this.driver = driver;
+	public ApplicationsOfBinarytreesPage(WebDriver driver) {
+		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//p[text()='Binary Tree Traversals']")
-	private WebElement binaryTreeTraversalsHeading;
+	@FindBy(xpath="//p[text()='Applications of Binary trees']")
+	private WebElement applicationsOfBinaryTreesHeading;
 	
 	@FindBy(xpath="//div[@id='content']/li")
 	private List<WebElement> countOfLinks;
@@ -33,12 +34,14 @@ WebDriver driver;
 		 
 	}
 	
-	public void binaryTreeTraversalsHeadingIsDisplayed() {
-		binaryTreeTraversalsHeading.isDisplayed();
+	public void applicationsOfBinaryTreesHeadingIsDisplayed() {
+		applicationsOfBinaryTreesHeading.isDisplayed();
 	}
 	
 	public void clickOnTryHereButton() {
 		tryHereButton.click();
 	}
+	
+	
+	
 }
-
