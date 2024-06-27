@@ -47,6 +47,15 @@ WebDriver driver;
 	@FindBy(xpath="//a[contains(text(),'Implementation of Binary Trees')]")
 	private WebElement implementationOfBinaryTreesLink;
 	
+	@FindBy(xpath="//a[contains(text(),'Applications of Binary trees')]")
+	private WebElement applicationsOfBinaryTreesLink;
+	
+	@FindBy(xpath="//a[contains(text(),'Binary Search Trees')]")
+	private WebElement binarySearchTreesLink;
+	
+	@FindBy(xpath="//a[contains(text(),'Implementation Of BST')]")
+	private WebElement implementationOfBSTLink;
+	
 	@FindBy(xpath="//h4")
 	private WebElement treeHeading;
 	
@@ -55,7 +64,6 @@ WebDriver driver;
 		
 	@FindBy(xpath="//div[@style=\'margin-top: 40px;margin-bottom: 40px;margin-right: 150px;margin-left: 80px;background-color: ;\']/ul")
 	private List<WebElement> countOfLinks;
-	
 	
 	
 
@@ -114,5 +122,18 @@ WebDriver driver;
 	public void clickOnImplementationOfBinaryTreesLink() {
 		implementationOfBinaryTreesLink.click();
 	}
+	
+	public void clickOnApplicationsOfBinaryTreesLink() {
+		applicationsOfBinaryTreesLink.click();
+	}
+	
+	public void clickOnBinarySearchTreesLink() {
+		binarySearchTreesLink.click();
+	}
+	
+	public void clickOnImplementationOfBST() {
+		implementationOfBSTLink.click();
+	}
+	
 	
 }

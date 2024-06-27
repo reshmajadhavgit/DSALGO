@@ -16,7 +16,7 @@ public class ImplementationInPythonPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//p[text()='//p[text()='Implementation in Python']']")
+	@FindBy(xpath="//p[text()='Implementation in Python']")
 	private WebElement implementationInPythonHeading;
 	
 	@FindBy(xpath="//div[@id='content']/li")
