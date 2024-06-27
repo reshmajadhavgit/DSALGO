@@ -64,7 +64,7 @@ public class PracticeQuestionQueueStepDefinition {
 		operationsinStackPage =new OperationsinStackPage(driver); 
 		commonUtils = new CommonUtils(driver);
 		commonUtils.doSelectOptionFromDropDown();
-		operationsinStackPage.doClickonDropdownoption();
+		//operationsinStackPage.doClickonDropdownoption();
 		
 	    
 	}

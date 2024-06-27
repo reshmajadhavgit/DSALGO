@@ -7,6 +7,7 @@ import org.testng.Assert;
 
 import factory.DriverFactory;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import pages.ApplicationsofArrayPage;
 import utils.CommonUtils;
 
@@ -70,5 +71,13 @@ public class ApplicationsofArrayStepDefinition {
 		commonUtils = new CommonUtils(driver);
 		Assert.assertTrue(commonUtils.isTryEditorPageDisplayed().contains("tryEditor"));
 	}
+	
+	@When("User clicks on Try here button from Applications of Array page")
+	public void user_clicks_on_try_here_button_on_applications_of_Array_page() {
+		driver = DriverFactory.getDriver();
+		commonUtils = new CommonUtils(driver);
+		commonUtils.doClickOnTryHereBtn();
+	}
+
 
 }

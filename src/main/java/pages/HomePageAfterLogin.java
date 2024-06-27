@@ -1,9 +1,14 @@
 package pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePageAfterLogin {
 	WebDriver driver;
@@ -32,7 +37,7 @@ public class HomePageAfterLogin {
 	private WebElement graphGetStartedButton;
 
 	@FindBy(xpath = "//h5[text()='Linked List']/parent::div/p/following-sibling::a[text()='Get Started']")
-	
+
 	private WebElement linkedListGetStartedButton;
 
 	public String getSuccessfulLoginMsg() {
@@ -42,27 +47,34 @@ public class HomePageAfterLogin {
 	}
 
 	public void doClickOnArrayGetStarted() {
-		arrayGetStartedButton.click();
+		Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(arrayGetStartedButton)).click();
 	}
-	
+
 	public void doClickOnLLGetStarted() {
-		linkedListGetStartedButton.click();
+		Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(linkedListGetStartedButton)).click();
 	}
 
 	public void doClickOnTreeGetStarted() {
-		treeGetStartedButton.click();
+
+		Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(treeGetStartedButton)).click();
 	}
 
 	public void doClickOnStackGetStarted() {
-		stackGetStartedButton.click();
+		Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(stackGetStartedButton)).click();
 	}
 
 	public void doClickOnQueueGetStarted() {
-		queueGetStartedButton.click();
+		Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(queueGetStartedButton)).click();
 	}
 
 	public void doClickOnGraphGetStarted() {
-		graphGetStartedButton.click();
+		Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(graphGetStartedButton)).click();
 	}
 
-	}
+}

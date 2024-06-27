@@ -7,6 +7,7 @@ import org.testng.Assert;
 
 import factory.DriverFactory;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import pages.BasicOperationsinLists;
 import utils.CommonUtils;
 
@@ -14,7 +15,7 @@ public class BasicOperationsinListsStepDefinition {
 	WebDriver driver;
 	BasicOperationsinLists basicOperationsinLists;
 	CommonUtils commonUtils;
-	
+
 	@Then("User sees Basic Operations in Lists header on the page")
 	public void user_sees_basic_operations_in_lists_header_on_the_page() {
 		driver = DriverFactory.getDriver();
@@ -77,6 +78,11 @@ public class BasicOperationsinListsStepDefinition {
 		Assert.assertTrue(commonUtils.isTryEditorPageDisplayed().contains("tryEditor"));
 	}
 
-
+	@When("User clicks on Try here button on Basic Operations in Lists page")
+	public void user_clicks_on_try_here_button_on_Basic_Operations_in_Lists_page() {
+		driver = DriverFactory.getDriver();
+		commonUtils = new CommonUtils(driver);
+		commonUtils.doClickOnTryHereBtn();
+	}
 
 }
