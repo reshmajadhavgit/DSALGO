@@ -1,4 +1,4 @@
-Feature: Arrays functionality
+Feature: Navigate to Array feature
 
 Background: Login with valid credentials
 Given User is logged into Homepage with valid username "automationtechies" and "techies@1234" 

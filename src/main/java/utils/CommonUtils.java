@@ -31,6 +31,9 @@ public class CommonUtils {
 
 	@FindBy(xpath = "//div/a[text()='Arrays']")
 	private WebElement arraysOption;
+	
+	@FindBy(xpath = "//div/a[text()='Linked List']")
+	private WebElement linkedListOption;
 
 	@FindBy(xpath = "//a[@data-toggle='dropdown']")
 	private WebElement dataStructuresDropDown;
@@ -79,15 +82,21 @@ public class CommonUtils {
 
 	// ******************************Select the option from the dropdown
 	// list***********************
+	public String getPageURL()
+	{
+		return driver.getCurrentUrl();
+	}
+	
 	public void doSelectOptionFromDropDown() {
 		dataStructuresDropDown.click();
 		arraysOption.click();
-//	    Actions action = new Actions(driver); 
-//	    action.moveToElement(arraysOption).click();
-		// action.moveToElement(arraysOption).build().perform();
-
 	}
-
+	
+	public void doSelectLinkedListOptionFromDropDown() {
+		dataStructuresDropDown.click();
+		linkedListOption.click();
+	}
+	
 	public int getDropdownCount() {
 		return dataStructuresDropDownList.size();
 	}
