@@ -31,6 +31,9 @@ public class CommonUtils {
 
 	@FindBy(xpath = "//div/a[text()='Arrays']")
 	private WebElement arraysOption;
+	
+	@FindBy(xpath = "//div/a[text()='Linked List']")
+	private WebElement linkedListOption;
 
 	@FindBy(xpath = "//a[@data-toggle='dropdown']")
 	private WebElement dataStructuresDropDown;
@@ -79,25 +82,37 @@ public class CommonUtils {
 
 	// ******************************Select the option from the dropdown
 	// list***********************
-	public void doSelectOptionFromDropDown() {
-		dataStructuresDropDown.click();
-		arraysOption.click();
-//	    Actions action = new Actions(driver); 
-//	    action.moveToElement(arraysOption).click();
-		// action.moveToElement(arraysOption).build().perform();
-
+	public String getPageURL()
+	{
+		return driver.getCurrentUrl();
 	}
-
+	
+	public void doSelectOptionFromDropDown() {
+		Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(dataStructuresDropDown)).click();
+		arraysOption.click();
+	}
+	
+	
+	public void doSelectLinkedListOptionFromDropDown() {
+		Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(dataStructuresDropDown)).click();
+		linkedListOption.click();
+	}
+	
 	public int getDropdownCount() {
 		return dataStructuresDropDownList.size();
 	}
 
 	public boolean isLogoPresent() {
-		return numpyLogo.isDisplayed();
+		Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		return wait.until(ExpectedConditions.visibilityOf(numpyLogo)).isDisplayed();
 	}
 
 	public boolean isDropdownDisplayed() {
-		return dataStructuresDropDown.isDisplayed();
+		Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		return wait.until(ExpectedConditions.visibilityOf(dataStructuresDropDown)).isDisplayed();
+
 	}
 
 	public String isTryEditorPageDisplayed() {

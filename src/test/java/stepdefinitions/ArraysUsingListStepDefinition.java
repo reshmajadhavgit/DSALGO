@@ -7,6 +7,7 @@ import org.testng.Assert;
 
 import factory.DriverFactory;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import pages.ArraysUsingListPage;
 import utils.CommonUtils;
 
@@ -76,6 +77,13 @@ public class ArraysUsingListStepDefinition {
 		driver = DriverFactory.getDriver();
 		commonUtils = new CommonUtils(driver);
 		Assert.assertTrue(commonUtils.isTryEditorPageDisplayed().contains("tryEditor"));
+	}
+	
+	@When("User clicks on Try here button on Arrays using List page")
+	public void user_clicks_on_try_here_button_on_arrays_using_list_page() {
+		driver = DriverFactory.getDriver();
+		commonUtils = new CommonUtils(driver);
+		commonUtils.doClickOnTryHereBtn();
 	}
 
 }

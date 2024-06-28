@@ -40,5 +40,5 @@ Scenario: Verify "Practice Questions" link is clickable
 Then  "Practice Questions" page opens up on Arrays Using List page
 
 Scenario: Verify "Try here" button
-When User clicks on Try here button
+When User clicks on Try here button on Arrays using List page
 Then Try Editor page opens up from Arrays Using List page

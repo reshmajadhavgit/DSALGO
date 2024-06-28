@@ -25,7 +25,7 @@ Scenario: Verify the "Applications of Array" page title
 Then Page title should be correct on Applications of Array page
 
 Scenario: Verify "Arrays in Python" link is clickable
-Then  "Arrays in Python" page opens up on Arrays in Python page
+Then  "Arrays in Python" page opens up from Applications of Array page
 
 Scenario: Verify "Arrays Using List" link is clickable
 Then  "Arrays Using List" page opens up from Applications of Array page
@@ -40,5 +40,5 @@ Scenario: Verify "Practice Questions" link is clickable
 Then  "Practice Questions" page opens up from Applications of Array page
 
 Scenario: Verify "Try here" button
-When User clicks on Try here button
+When User clicks on Try here button from Applications of Array page
 Then  Try Editor page opens up from Applications of Array page

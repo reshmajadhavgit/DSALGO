@@ -40,5 +40,5 @@ Scenario: Verify "Practice Questions" link is clickable
 Then  "Practice Questions" page opens up on Basic Operations in Lists page
 
 Scenario: Verify "Try here" button
-When User clicks on Try here button
+When User clicks on Try here button on Basic Operations in Lists page
 Then Try Editor page opens up from Basic Operations in Lists page
