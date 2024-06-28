@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>250/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jun 26 16:02:01 CDT 2024</td>
+<td>Started on:</td><td>Thu Jun 27 16:45:13 CDT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>21 seconds (21010 ms)</td>
+<tr><td>Total time:</td><td>1297 seconds (1297677 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,73 +76,1326 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid credentials", "Login functionality"</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#id_username1&quot;}
-  (Session info: chrome=126.0.6478.63)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the valid text on "Search the array" page", "Verify "Practice" page functionality"</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : NameError: name &apos;Testing&apos; is not defined on line 1}
+  (Session info: chrome=126.0.6478.63): NameError: name &apos;Testing&apos; is not defined on line 1
 Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7e94b06b003976ffa1a323ca7255ab15, findElement {using=id, value=id_username1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.63, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\reshm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64038}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64038/devtoo..., se:cdpVersion: 126.0.6478.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7e94b06b003976ffa1a323ca7255ab15
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+Command: [d246612677fcc613a32232fa87b37bdc, findElement {using=id, value=output}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.63, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\reshm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55554}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55554/devtoo..., se:cdpVersion: 126.0.6478.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d246612677fcc613a32232fa87b37bdc
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.sendKeys(Unknown Source)
-	at pages.LoginPage.enterLoginCredentials(LoginPage.java:32)
-	at stepdefinitions.LoginStepDefinition.user_enters_username_and_enters_password(LoginStepDefinition.java:57)
-	at ✽.User enters username &quot;automationtechies&quot; and enters password &quot;techies@1234&quot;(file:///C:/Users/reshm/DSALGO-Final/DSALGO/src/test/resources/features/Login.feature:5)
-</pre></div><a href='#' onClick='toggleBox("stack-trace141601266", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace141601266'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#id_username1&quot;}
-  (Session info: chrome=126.0.6478.63)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at pages.PracticeSearchArrayPage.verifyOutput(PracticeSearchArrayPage.java:98)
+	at stepdefinitions.PracticeSearchArrayStepDefn.output_should_be_displayed_correctly(PracticeSearchArrayStepDefn.java:69)
+	at ✽.Output &quot;Testing&quot; should be displayed correctly(file:///C:/Users/reshm/DSALGO-Final/DSALGO/src/test/resources/features/PracticeSearchArray.feature:29)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1728928142", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1728928142'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : NameError: name &apos;Testing&apos; is not defined on line 1}
+  (Session info: chrome=126.0.6478.63): NameError: name &apos;Testing&apos; is not defined on line 1
 Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7e94b06b003976ffa1a323ca7255ab15, findElement {using=id, value=id_username1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.63, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\reshm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64038}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64038/devtoo..., se:cdpVersion: 126.0.6478.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7e94b06b003976ffa1a323ca7255ab15
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+Command: [d246612677fcc613a32232fa87b37bdc, findElement {using=id, value=output}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.63, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\reshm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55554}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55554/devtoo..., se:cdpVersion: 126.0.6478.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d246612677fcc613a32232fa87b37bdc
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.sendKeys(Unknown Source)
-	at pages.LoginPage.enterLoginCredentials(LoginPage.java:32)
-	at stepdefinitions.LoginStepDefinition.user_enters_username_and_enters_password(LoginStepDefinition.java:57)
-	at ✽.User enters username &quot;automationtechies&quot; and enters password &quot;techies@1234&quot;(file:///C:/Users/reshm/DSALGO-Final/DSALGO/src/test/resources/features/Login.feature:5)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at pages.PracticeSearchArrayPage.verifyOutput(PracticeSearchArrayPage.java:98)
+	at stepdefinitions.PracticeSearchArrayStepDefn.output_should_be_displayed_correctly(PracticeSearchArrayStepDefn.java:69)
+	at ✽.Output &quot;Testing&quot; should be displayed correctly(file:///C:/Users/reshm/DSALGO-Final/DSALGO/src/test/resources/features/PracticeSearchArray.feature:29)
 </pre></div></td>
-<td>19</td>
-<td>runner.TestRunner@4f824872</td></tr>
+<td>6</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the links on Linked List Page", "Linked List page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Practice Questions" link is clickable", "Verify "Arrays in Python" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Basic Operations in Lists" link is clickable", "Verify "Applications of Array" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Dropdown on Implementation using array", "Implementation using array functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to land on the Implementation of Binary Trees Page", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Applications of Array" link is clickable", "Array page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is in the Types of Binary Trees page", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to use the tryEditor under Implementation in Python", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is in the Tree Traversals page", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Data Structures drop down is displayed", "Deletion page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to land on Practice questions page", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Try here" button", "Verify "Arrays Using List" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Array header on the Array page", "Array page functionality"</td>
+<td></td>
+<td>23</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Links on Graph page", "Graph functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Arrays Using List" link is clickable", "Verify "Basic Operations in Lists" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify  Header of Operations in stack page", "Operation in Stack functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Username on Practice Page", "Implementation using array functionality"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify PracticeQuestion Link is  Clickable", "Operation in Stack functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the page text on "Search the array" page", "Verify "Practice" page functionality"</td>
+<td></td>
+<td>8</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify number of  link on Graph Respresntations page", "Graph Respresntations functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the title on the Creating Linked LIst page", "Linked List page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify TryEditor btn is  Clickable", "Operation in Stack functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify page header on the "Applications of Array" page", "Verify "Applications of Array" page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify total links present on the "Applications of Array" page", "Verify "Applications of Array" page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Logo on Queue page", "Queue functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the "Arrays Using List" page title", "Verify "Arrays Using List" page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Max Consecutive Ones" link is clickable", "Verify "Practice" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Try here button on the Introduction page", "Linked List page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the text on the Traversal page", "Traversal page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Registration feature with multiple data sets", "Registration functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify QueuePage Content", "Queue functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to use the tryEditor under Applications of Binary Trees", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify TryEditor btn is  Clickable", "Implementation using collections.deque functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the url of the "Arrays Using List" page", "Verify "Arrays Using List" page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to use the tryEditor under Tree Traversals", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to use the tryEditor under terminologies", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user navigates to previous page from Try Editor", "Verify "Arrays in Python" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Title of Queue page", "Queue functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Registration feature with multiple data sets", "Registration functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify ImplementationPage Content", "Implementation  functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Registration feature with multiple data sets", "Registration functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the text on the Introduction page", "Linked List page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Links  on Stack page", "Stack functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to land on the Binary Search Trees Page", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the title on the Insertion page", "Insertion page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify total links present on the "Arrays Using List" page", "Verify "Arrays Using List" page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Practice Questions" link is clickable", "Verify "Basic Operations in Lists" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify PracticeQuestion Link is Clickable on Implementation Page", "Implementation  functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify number of  link on Queue Operations Page", "Queue Operations functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the page source on the "Applications of Array" page", "Verify "Applications of Array" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the text of all the links on the "Arrays in Python" page", "Verify "Arrays in Python" page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to use the tryEditor under Types of Trees", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the alert message on "Search the array" page", "Verify "Arrays in Python" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify page links on the Practice page", "Verify "Practice" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify  Header of Implementation of Queue in Python", "Implementation of Queue in Python functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify  Header on Application page", "Implementation  functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Title of Stack page", "Stack functionality"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to land on the Tree Traversals Page", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to land on the Overview of trees Page", "Tree functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Basic Operations in Lists" link is clickable", "Verify "Basic Operations in Lists" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Arrays in Python" link is clickable", "Array page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Practice Question link on the Deletion page", "Deletion page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to land on the Binary Trees Page", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Implementation using array Link Navigate to that  page", "Queue functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the title of the Editor Page", "Verify "Arrays in Python" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the page source on the "Arrays Using List" page", "Verify "Arrays Using List" page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Header of Graph page", "Graph functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the alert message on "Search the array" page", "Verify "Practice" page functionality"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Applications of Array" link is clickable", "Verify "Arrays in Python" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify  DatastuructureDropdown  on Application page", "Implementation  functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Array page title", "Array page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify  back button button Functionlity.", "Implementation using array functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the links on Linked List Page", "Linked List page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to land on the Implementation Of BST Page", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Practice Question link on the Creating Linked LIst page", "Linked List page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the page header on the "Arrays Using List" page", "Verify "Arrays Using List" page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is in the Traversals-Illustration page", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Title of Implementation  page", "Implementation  functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Graph Respresntations Page Content", "Graph Respresntations functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Data Structures drop down is displayed", "Insertion page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Arrays Using List" link is clickable", "Verify "Arrays Using List" page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Numpy Ninja logo", "Traversal page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Registration feature with multiple data sets", "Registration functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the links on Linked List Page", "Linked List page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify URL of Applications page", "Implementation  functionality"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is in the Binary Tree Traversals page", "Tree functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the links on Linked List Page", "Linked List page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Header of Queue page", "Queue functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Try here" button", "Verify "Basic Operations in Lists" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the username is displayed", "Deletion page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is in the Overview of trees page", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify number of  link on implementation of Queue in Python", "Implementation of Queue in Python functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Graph Representations Link is  clickable on  Graph page", "Graph functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Try here" button", "Verify "Arrays in Python" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the url on the Array page", "Array page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to use the tryEditor under Types of Binary Trees", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to use the tryEditor under Traversals-Illustration", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Arrays in Python" link is clickable", "Verify "Applications of Array" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify TryEditor btn is  Clickable", "Implementation of Queue in Python functionality"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Navigate to Array feature"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify  Header of Implementation using array", "Implementation using array functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the page source on the "Arrays in Python" page", "Verify "Arrays in Python" page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Basic Operations in Lists link" is clickable", "Array page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the links on Linked List Page", "Linked List page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify default text on "Editor" pane", "Verify "Practice" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the username is displayed", "Insertion page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the "Arrays in Python" page title", "Verify "Arrays in Python" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Queue Operations Page Content", "Queue Operations functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Data Structures drop down is displayed", "Deletion page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Registration feature with multiple data sets", "Registration functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the "Applications of Array" page title", "Verify "Applications of Array" page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is in the Binary Search Trees page", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the page text on "Search the array" page", "Verify "Practice" page functionality"</td>
+<td></td>
+<td>7</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Logo on Implementation using collections.deque", "Implementation using collections.deque functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Arrays Using List" link is clickable", "Array page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Logo on Practice Page", "Implementation using array functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the url on the "Arrays in Python" page", "Verify "Arrays in Python" page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Registration feature with multiple data sets", "Registration functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Arrays in Python header on the "Arrays in Python" page", "Verify "Arrays in Python" page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify TryEditor btn is  Clickable", "Queue Operations functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the page header on the "Basic Operations in Lists" page", "Verify "Basic Operations in Lists" page functionality"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to use the tryEditor under Binary Tree Traversals", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is in the Implementation in Python page", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the links on Linked List Page", "Linked List page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Navigate to LinkList feature"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Links  on Applications page", "Implementation  functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Title of Implementation of Queue in Python", "Implementation of Queue in Python functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Signout Link  on Graph Respresntations page", "Graph Respresntations functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is navigated back to Practice page", "Verify "Practice" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to use the tryEditor under Binary Search Trees", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the text of all the links on the Array page", "Array page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify from Dropdown user navigate  to that Page", "Implementation using array functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify page url on "Search the array" page", "Verify "Practice" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Try here button on the Implement Linked List in Python page", "Implement Linked List in Python page functionality"</td>
+<td></td>
+<td>8</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to land on the Implementation in Python Page", "Tree functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to land on the Types of Binary Trees Page", "Tree functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to use the tryEditor under Implementation of Binary Trees", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the url on the "Applications of Array" page", "Verify "Applications of Array" page functionality"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is in the Implementation of Binary Trees page", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Navigate to Array feature"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Search the Array" link is clickable", "Verify "Practice" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Links on Graph page", "Graph functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Arrays Using List" link is clickable", "Verify "Applications of Array" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify PracticeQuestion Link is Clickable on Graph Respresntations", "Graph Respresntations functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Practice Question link on the Insertion page", "Insertion page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is in the Types of Trees page", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to land on the Applications of Binary Trees Page", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Queue Operations Link is clickable", "Queue functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is in the Terminologies page", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Username on implementation of Queue in Python", "Implementation of Queue in Python functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to use the tryEditor under Implementation Of BST", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Title of Queue Operations page", "Queue Operations functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the title on the Types of Linked List page", "Types of Linked List page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify TryEditor btn is  Clickable", "Implementation using array functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Navigate to LinkList feature"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is in the Binary Trees page", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Implementation using array Content", "Implementation using array functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to land on the Traversals-Illustration Page", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify  Header on Implementation page", "Implementation  functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Signout link is displayed", "Deletion page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the title on the Deletion page", "Deletion page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the "Basic Operations in Lists" page title", "Verify "Basic Operations in Lists" page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is in the Applications of Binary Trees page", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Registration feature with multiple data sets", "Registration functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify SubHeader of Stack page", "Stack functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the url of the "Basic Operations in Lists" page", "Verify "Basic Operations in Lists" page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the username is displayed", "Deletion page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Basic Operations in Lists" link is clickable", "Verify "Arrays in Python" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to use the tryEditor under Binary Trees", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the page source on the "Basic Operations in Lists" page", "Verify "Basic Operations in Lists" page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Applications of Array" link is clickable", "Verify "Basic Operations in Lists" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify GraphPage Content", "Graph functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the text on the Implement Linked List in Python page", "Implement Linked List in Python page functionality"</td>
+<td></td>
+<td>11</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify TryEditor btn is  Clickable on Implementation page", "Implementation  functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify total links present on the "Basic Operations in Lists" page", "Verify "Basic Operations in Lists" page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify SubHeader of Queue page", "Queue functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Title of Opearion in stack page", "Operation in Stack functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the page source on the Array page", "Array page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Title of Implementation using collections.deque", "Implementation using collections.deque functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify number of  link on stack page", "Operation in Stack functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify TryEditor btn is  Clickable on Graph Respresntations Page", "Graph Respresntations functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Arrays in Python" link is clickable", "Verify "Arrays Using List" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to use the tryEditor under Overviews of Trees", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Applications Link Navigate to that  page", "Stack functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Find Numbers with Even Number of Digits" link is clickable", "Verify "Practice" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Arrays Using List" link is clickable", "Verify "Arrays in Python" page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify  Header on Graph Respresntations page", "Graph Respresntations functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Arrays in Python" link is clickable", "Verify "Arrays in Python" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify  Header of Queue Operations", "Queue Operations functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify number of  link on Implementation using array", "Implementation using array functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the text on the Practice page", "Verify "Practice" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Arrays in Python" link is clickable", "Verify "Basic Operations in Lists" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to land on the Binary Tree Traversals Page", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Squares of  a Sorted Array" link is clickable", "Verify "Practice" page functionality"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the links on Linked List Page", "Linked List page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify TryEditor btn is  Clickableon application Page", "Implementation  functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify page title on the Practice page", "Verify "Practice" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify total links present on the "Arrays in Python" page", "Verify "Arrays in Python" page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Signout link is displayed", "Deletion page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Current URL of the LInk", "Implementation using array functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Implementation using collections.deque Content", "Implementation using collections.deque functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify valid data in Try Editor page", "Verify "Arrays in Python" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Practice Question link on the Types of Linked List page", "Types of Linked List page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the text of all the links on the "Applications of Array" page", "Verify "Applications of Array" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify page title on "Search the array" page", "Verify "Practice" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login feature with multiple invalid data sets", "Login functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to land on the Types of Trees Page", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Array header on the "Arrays in Python" page", "Verify "Arrays in Python" page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Applications of Array" link is clickable", "Verify "Applications of Array" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify operationinStackPage Content", "Operation in Stack functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Registration feature with multiple data sets", "Registration functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify number of  link on Implementation page", "Implementation  functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verfiy Operation in stack Link is Clickable", "Stack functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the text of all the links on the "Arrays Using List" page", "Verify "Arrays Using List" page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Basic Operations in Lists" link is clickable", "Verify "Arrays Using List" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Dropdown is Displayed on Practice Page", "Implementation using array functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Topics Covered header on the Array page", "Array page functionality"</td>
+<td></td>
+<td>3</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Implementation Link Navigate to that  page", "Stack functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Try here button on the Traversal page", "Traversal page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Signout Link  on Implementation page", "Implementation  functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Practice Questions" link is clickable", "Verify "Applications of Array" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Title of Implementation using array", "Implementation using array functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the text of all the links on the "Basic Operations in Lists" page", "Verify "Basic Operations in Lists" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify implementation of Queue in Python Content", "Implementation of Queue in Python functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify PracticeQuestion Link is  Clickable on application Page", "Implementation  functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Practice Questions" link is clickable", "Verify "Arrays Using List" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify default text on "Search the array" page", "Verify "Practice" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Practice question Link is clickable", "Implementation using collections.deque functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Numpy Ninja logo", "Deletion page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Implementation using collections.deque Link Navigate to that  page", "Queue functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verfiy Implementation of Queue in Python Link is Clicable", "Queue functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify total links present on the Array page", "Array page functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify StackPage Content", "Stack functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify ApplicationsPage Content", "Implementation  functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid credentials", "Login functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify number of  link on Implementation using collections.deque", "Implementation using collections.deque functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Logo on Stack page", "Stack functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Try here" button", "Verify "Applications of Array" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify DropdownList on Queue Operations Page", "Queue Operations functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is in the Implementation Of BST page", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to land on the Terminologies Page", "Tree functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the buttons on "Search the array" page", "Verify "Practice" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login feature with multiple invalid data sets", "Login functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Header of Stack page", "Stack functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Title of Graph Respresntations page", "Graph Respresntations functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Links  on Queue page", "Queue functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify "Applications of Array" link is clickable", "Verify "Arrays Using List" page functionality"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Username on Operation in Stack page", "Operation in Stack functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify  Header of Implementation using collections.deque", "Implementation using collections.deque functionality"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58e92c23</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login feature with multiple invalid data sets", "Login functionality"</td>
+<td></td>
+<td>3</td>
+<td>runner.TestRunner@58e92c23</td></tr>
 </table><p>
 </body>
 </html>

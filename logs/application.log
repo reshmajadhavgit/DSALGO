@@ -1,2 +1,24 @@
-2024-06-26 16:02:11,176 INFO logger.Log [main] User is on the Login page...
-2024-06-26 16:02:11,195 INFO logger.Log [main] Entering username and password
+2024-06-27 16:56:16,757 INFO logger.Log [main] User is on the Login page...
+2024-06-27 16:56:16,763 INFO logger.Log [main] Entering username and password
+2024-06-27 16:56:20,845 INFO logger.Log [main] User is on the Login page...
+2024-06-27 16:56:21,394 ERROR logger.Log [main] Error message is: Invalid Username and Password
+2024-06-27 16:56:24,852 INFO logger.Log [main] User is on the Login page...
+2024-06-27 16:56:25,475 ERROR logger.Log [main] Error message is: Invalid Username and Password
+2024-06-27 16:56:28,975 INFO logger.Log [main] User is on the Login page...
+2024-06-27 16:56:29,646 ERROR logger.Log [main] Error message is: Invalid Username and Password
+2024-06-27 17:01:15,849 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection [main] Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-06-27 17:01:15,959 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection [main] Parsing relationship: /_rels/.rels
+2024-06-27 17:01:20,991 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection [main] Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-06-27 17:01:20,991 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection [main] Parsing relationship: /_rels/.rels
+2024-06-27 17:01:25,384 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection [main] Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-06-27 17:01:25,386 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection [main] Parsing relationship: /_rels/.rels
+2024-06-27 17:01:29,569 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection [main] Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-06-27 17:01:29,572 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection [main] Parsing relationship: /_rels/.rels
+2024-06-27 17:01:33,762 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection [main] Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-06-27 17:01:33,762 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection [main] Parsing relationship: /_rels/.rels
+2024-06-27 17:01:38,090 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection [main] Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-06-27 17:01:38,090 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection [main] Parsing relationship: /_rels/.rels
+2024-06-27 17:01:42,349 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection [main] Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-06-27 17:01:42,351 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection [main] Parsing relationship: /_rels/.rels
+2024-06-27 17:01:46,516 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection [main] Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-06-27 17:01:46,516 DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection [main] Parsing relationship: /_rels/.rels

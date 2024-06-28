@@ -24,9 +24,9 @@ Scenario: Verify the buttons on "Search the array" page
 Then Run and Submit button should be displayed on Search the array page
 
 Scenario: Verify the valid text on "Search the array" page
-When User enters data "print(Testing)" in the text editor window 
+When User enters data "print(10)" in the text editor window 
 And User clicks on Run button
-Then Output "Testing" should be displayed correctly
+Then Output "10" should be displayed correctly
 
 Scenario: Verify the page text on "Search the array" page
 When User enters data "print(10)" in the text editor window  
@@ -47,5 +47,3 @@ Then Page url is displayed correctly on Search the array page
 Scenario: Verify user is navigated back to Practice page
 When User clicks on browser back button
 Then User is navigated to Practice page
-
-
